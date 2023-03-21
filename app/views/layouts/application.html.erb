@@ -12,13 +12,14 @@
   </head>
 
   <body>
-    <div class="min-vh-100">
+    <div>
       <%= render "shared/navbar" %>
       <%= render "shared/flashes" %>
-      <div class="div">
+      <div>
         <%= yield %>
       </div>
     </div>
+    <div class="fixed inset-x-0 bottom-0">
       <%= render "shared/footer" %>
+    </div>
   </body>
-</html>
