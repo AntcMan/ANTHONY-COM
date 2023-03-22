@@ -1,51 +1,77 @@
 <%# BANNER %>
-<div class="banner">
-  <div class="banner-content h-screen">
-    <h1>Hey, I'm Anthony</h1>
-    <h2>I’m a software engineer who’s passionate about all things eCommerce and all things code</h2>
-      <%# TYPESETTER JS STARTS HERE %>
-      <%# TYPESETTER JS ENDS HERE %>
+<div class="container">
+  <div class="row">
+    <div class="banner">
+      <div class="banner-content h-96">
+        <h1>Hey, I'm Anthony</h1>
+          <%# TYPESETTER JS STARTS HERE %>
+            <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+            <!-- Setup and start animation! -->
+            <script>
+              var typed = new Typed('#element', {
+                strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+                typeSpeed: 50,
+              });
+            </script>
+
+          <%# TYPESETTER JS ENDS HERE %>
+      </div>
+    </div>
   </div>
 </div>
 
 <%# ABOUT ME %>
-<div class="about-me">
-  <div class="about-me-content">
-    <h3>Everything you need to know about me in one-ish lines</h3>
-    <p>My M.O. is all about creating and coding software solutions that drive sales/conversions/customer experiences online</p>
+<div class="row">
+  <div class="about-me">
+    <div class="about-me-content">
+      <h3>HERE'S WHAT I'M ALL ABOUT</h3>
+      <p>I started my career in ecommerce and marketing, helping small business build their online presence and grow their customer base. Throughout my roles,  I worked closely with software developers. I saw the power of technology in driving the bottom-line and increasing conversions and became fascinated by the world of coding.
+          I realised that by coding I could have an even greater impact on the businesses I worked with. So I decided to take the leap and transition my career to become a software engineer. I enrolled in a  coding bootcamp and dedicated every spare moment to learning and practicing my new skills.
+          And now I look to fuse my e-Commerce expertise with my new coding skills to create solutions that help businesses thrive in the digital world.</p>
+    </div>
+  </div>
+</div>
+
+<%# EXPERIENCE %>
+<div class="row">
+  <div class="about-me">
+    <div class="about-me-content">
+      <h3>UNDER MY BELT</h3>
+      <p>insert work experience</p>
+    </div>
   </div>
 </div>
 
 <%# TECH STACK %>
-<div class="tech-stack">
-  <div class="tech-stack-content">
-    <h3>Here's what's in my toolbox</h3>
-      <div class="tech-stack-icons">
-        <i class="fa-brands fa-js" style="color: #909090;"></i>
-        <i class="fa-brands fa-aws" style="color: #909090;"></i>
-        <i class="fa-brands fa-css3-alt" style="color: #909090;"></i>
-        <i class="fa-brands fa-html5" style="color: #909090;"></i>
-        <i class="fa-brands fa-react" style="color: #909090;"></i>
-        <i class="fa-brands fa-npm" style="color: #909090;"></i>
-      </div>
+<div class="row">
+  <div class="tech-stack h-48">
+    <div class="tech-stack-content">
+      <h3>WHAT'S IN MY TECH TOOLBOX?</h3>
+        <div class="tech-stack-icons">
+
+        </div>
+    </div>
   </div>
 </div>
 
 <%# PORTFOLIO %>
-<div class="portfolio">
-  <div class="portfolio-content">
-    <h3>A couple of things I've built</h3>
+<div class="row">
+  <div class="portfolio h-80">
+    <div class="portfolio-content">
+      <h3>A COUPLE OF THINGS I'VE BUILT</h3>
+    </div>
   </div>
 </div>
 
 <%# EDUCATION %>
-<div class="education">
-  <div class="education-content">
-    <h3>I have a couple of pieces of paper from these fine institutions</h3>
-      <div class="education-logos">
-        <%# <%= image_tag('lewagon_logo.png', class: "lewagon_logo", alt: "Le Wagon Logo") %>
-        <%# <%= image_tag('Logo_of_Swinburne_University_of_Technology.svg.png', class: "swin_logo", alt: "Swinburne Logo")%>
-      </div>
+<div class="row">
+  <div class="education h-48">
+    <div class="education-content">
+      <h3>I ALSO HAVE A COUPLE PIECES OF 'PAPER' FROM THESE FINE SCHOOLS</h3>
+        <div class="education-logos">
+        </div>
+    </div>
   </div>
 </div>
 
