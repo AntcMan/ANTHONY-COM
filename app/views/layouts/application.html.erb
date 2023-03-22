@@ -9,6 +9,7 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+
   </head>
 
   <body>
@@ -19,7 +20,7 @@
         <%= yield %>
       </div>
     </div>
-    <div class="fixed inset-x-0 bottom-0">
+    <div class="fixed inset-x-0 bottom-0 py-2 bg-white">
       <%= render "shared/footer" %>
     </div>
   </body>
