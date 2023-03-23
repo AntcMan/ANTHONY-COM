@@ -2,84 +2,86 @@
 <div class="container">
   <div class="row">
     <div class="banner">
-      <div class="banner-content h-96">
-        <h1>Hey, I'm Anthony</h1>
-          <%# TYPESETTER JS STARTS HERE %>
-            <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-
-            <!-- Setup and start animation! -->
-            <script>
-              var typed = new Typed('#element', {
-                strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
-                typeSpeed: 50,
-              });
-            </script>
-
-          <%# TYPESETTER JS ENDS HERE %>
+      <div class="banner-content h-96 py-20 px-16 md:px-40">
+        <h1 data-controller="typed" data-typed-strings-value="<%= ["Hey, I'm Anthony 👋"].to_json %>"></h1>
       </div>
     </div>
   </div>
 </div>
+<hr>
 
 <%# ABOUT ME %>
-<div class="row">
-  <div class="about-me">
-    <div class="about-me-content">
-      <h3>HERE'S WHAT I'M ALL ABOUT</h3>
-      <p>I started my career in ecommerce and marketing, helping small business build their online presence and grow their customer base. Throughout my roles,  I worked closely with software developers. I saw the power of technology in driving the bottom-line and increasing conversions and became fascinated by the world of coding.
-          I realised that by coding I could have an even greater impact on the businesses I worked with. So I decided to take the leap and transition my career to become a software engineer. I enrolled in a  coding bootcamp and dedicated every spare moment to learning and practicing my new skills.
-          And now I look to fuse my e-Commerce expertise with my new coding skills to create solutions that help businesses thrive in the digital world.</p>
+<div class="container-about">
+  <div class="about-headline py-4 px-16 md:px-40">
+    <h3 class="text-4xl font-bold">But first, a bit of background</h3>
+  </div>
+  <div class="container mx-auto lg:flex lg:justify-center lg:items-center">
+    <div class="lg:w-1/2 lg:ml-4">
+      <p class="my-4 px-16 lg:my-0 lg:mt-4 text-lg font-extralight">
+        I started my career in ecommerce and marketing, helping small business build their online presence and grow their customer base. Throughout my roles, I worked closely with software developers. I saw the power of technology in driving the bottom-line and increasing conversions and became fascinated by the world of coding.
+        <br>
+        <br>
+        I realised that by coding I could have an even greater impact on the businesses I worked with. So I decided to take the leap and transition my career to become a software engineer. I enrolled in a  coding bootcamp and dedicated every spare moment to learning and practicing my new skills.
+        <br>
+        <br>
+        And now I look to fuse my e-Commerce expertise with my new coding skills to create solutions that help businesses thrive in the digital world.
+      </p>
     </div>
+  <div class="lg:w-1/2">
+    <img src="<%=asset_path("Anthony_Marion_profile-min.jpg")%>" alt="Profile Image" class="mx-auto my-4 lg:m-0 lg:ml-4 w-60 h-60 object-cover rounded-full shadow-2xl">
   </div>
 </div>
 
+
 <%# EXPERIENCE %>
 <div class="row">
-  <div class="about-me">
+  <div class="about-me py-20 px-16 md:px-40">
     <div class="about-me-content">
-      <h3>UNDER MY BELT</h3>
+      <h3 class="text-4xl font-bold">Experience and education</h3>
       <p>insert work experience</p>
     </div>
   </div>
 </div>
 
 <%# TECH STACK %>
-<div class="row">
-  <div class="tech-stack h-48">
-    <div class="tech-stack-content">
-      <h3>WHAT'S IN MY TECH TOOLBOX?</h3>
-        <span class="inline-grid grid-cols-3 gap-4">
-          <img src="<%=asset_path("ruby-programming-language-icon.svg")%>" alt="Ruby-logo">
-          <img src="<%=asset_path("icons8-amazon-web-services.svg")%>" alt="AWS-logo">
-          <img src="<%=asset_path("icons8-css3.svg")%>" alt="CSS-logo">
-          <img src="<%=asset_path("icons8-html-5.svg")%>" alt="HTML5-logo">
-          <img src="<%=asset_path("icons8-javascript.svg")%>" alt="JS-logo">
-          <img src="<%=asset_path("icons8-react-native.svg")%>" alt="React-logo">
-        </span>
+<div class="tech py-20 px-16 md:px-40" id="tech">
+  <div class="tech-content">
+    <h1 class="text-4xl font-bold mb-4">What's in my toolbox</h1>
+  </div>
+  <div class="flex flex-wrap items-center justify-center">
+    <div class="flex justify-between w-full sm:w-auto">
+      <img src="<%=asset_path("icons8-ruby-programming-language.svg")%>" alt="AWS-logo" class="object-cover pt-4 px-6">
+      <img src="<%=asset_path("icons8-amazon-web-services.svg")%>" alt="AWS-logo" class="object-cover pt-4 px-6">
+      <img src="<%=asset_path("icons8-css3.svg")%>" alt="CSS-logo" class="object-cover pt-4 px-6">
+    </div>
+    <div class="flex justify-between w-full sm:w-auto">
+      <img src="<%=asset_path("icons8-html-5.svg")%>" alt="HTML5-logo" class="object-cover pt-4 px-6">
+      <img src="<%=asset_path("icons8-javascript.svg")%>" alt="JS-logo" class="object-cover pt-4 px-6">
+      <img src="<%=asset_path("icons8-react-native.svg")%>" alt="React-logo" class="object-cover pt-4 px-6">
+
     </div>
   </div>
 </div>
 
 <%# PORTFOLIO %>
 <div class="row">
-  <div class="portfolio h-80">
+  <div class="portfolio h-80 px-16 md:px-40" id="portfolio">
     <div class="portfolio-content">
-      <h3>A COUPLE OF THINGS I'VE BUILT</h3>
-    </div>
-  </div>
-</div>
-
-<%# EDUCATION %>
-<div class="row">
-  <div class="education">
-    <div class="education-content">
-      <h3 class="mb-5">I ALSO HAVE A COUPLE PIECES OF 'PAPER' FROM THESE FINE SCHOOLS</h3>
-        <span class="h-56 grid grid-cols-2 gap-4 content-between">
-          <img src="<%=asset_path("Swin.svg")%>">
-          <img src="<%=asset_path("Lewagon.svg")%>">
-        </span>
+      <h3 class="text-4xl font-bold mb-4">A couple of projects I've been working on</h3>
+      <p class="text-lg font-extralight">(Sit tight! There are more on the way)</p>
     </div>
   </div>
 </div>
 
 <%# CONTACT %>
+<div class="bg-gray-50 py-20 px-16 md:px-40" id="contact-anthony">
+  <div class="contact-content">
+    <h3 class="text-4xl font-bold">One last thing...</h3>
+    <p class="pt-4 text-lg font-extralight">If you'd like to chat about opportunities, projects or just want to say hello - I'm always down to talk.</p>
+    <br>
+    <br>
+    <h3><a href="mailto:anthonycmarion@gmail.com" target="_blank" class="text-teal-700 font-bold hover:text-gray-700 text-lg">
+      Drop me a line here
+    </a></h3>
+  </div>
+</div>
