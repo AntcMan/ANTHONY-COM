@@ -8,6 +8,7 @@ export default class extends Controller {
     this.typedInstance = new Typed(this.element, {
       strings: this.stringsValue,
       typeSpeed: 15,
+      showCursor: false
     });
   }
 }

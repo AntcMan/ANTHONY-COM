@@ -1,23 +1,22 @@
 <%# BANNER %>
-<div class="container">
-  <div class="row">
-    <div class="banner">
-      <div class="banner-content h-96 py-20 px-16 md:px-40">
-        <h1 data-controller="typed" data-typed-strings-value="<%= ["Hey, I'm Anthony 👋"].to_json %>"></h1>
-      </div>
+<div class="row">
+  <div class="banner">
+    <div class="banner-content flex justify-center items-center h-screen mt-4 px-16 py-20 text-6xl sm:text-5xl md:text-6xl">
+      <h1 data-controller="typed" data-typed-strings-value="<%= ["Hey👋 I'm Anthony.
+      <br>
+      I'm a junior software engineer passionate about creating solutions with code."].to_json %>"></h1>
     </div>
   </div>
 </div>
-<hr>
 
 <%# ABOUT ME %>
-<div class="container-about">
-  <div class="about-headline py-4 px-16 md:px-40">
-    <h3 class="text-4xl font-bold">But first, a bit of background</h3>
+<div class="container-about py-20 bg-teal-700">
+  <div class="about-headline px-16 md:px-40">
+    <h3 class="text-4xl font-bold mb-4 text-slate-50">But first, a bit of background</h3>
   </div>
   <div class="container mx-auto lg:flex lg:justify-center lg:items-center">
     <div class="lg:w-1/2 lg:ml-4">
-      <p class="my-4 px-16 lg:my-0 lg:mt-4 text-lg font-extralight">
+      <p class="my-4 lg:my-0 lg:mt-4 text-lg font-extralight px-16 text-slate-50">
         I started my career in ecommerce and marketing, helping small business build their online presence and grow their customer base. Throughout my roles, I worked closely with software developers. I saw the power of technology in driving the bottom-line and increasing conversions and became fascinated by the world of coding.
         <br>
         <br>
@@ -27,9 +26,12 @@
         And now I look to fuse my e-Commerce expertise with my new coding skills to create solutions that help businesses thrive in the digital world.
       </p>
     </div>
-  <div class="lg:w-1/2">
-    <img src="<%=asset_path("Anthony_Marion_profile-min.jpg")%>" alt="Profile Image" class="mx-auto my-4 lg:m-0 lg:ml-4 w-60 h-60 object-cover rounded-full shadow-2xl">
+  <div class="lg:w-1/2 flex justify-center z-0">
+    <div class="border-white border-2 max-h-fit max-w-fit">
+      <img src="<%=asset_path("Anthony_Marion_profile-min.jpg")%>" alt="Profile Image" class="mx-auto my-4 lg:m-0 lg:ml-4 w-60 h-60 object-cover -translate-x-6">
+    </div>
   </div>
+</div>
 </div>
 
 
@@ -64,14 +66,14 @@
 </div>
 
 <%# PORTFOLIO %>
-<div class="row">
+
   <div class="portfolio h-80 px-16 md:px-40" id="portfolio">
     <div class="portfolio-content">
       <h3 class="text-4xl font-bold mb-4">A couple of projects I've been working on</h3>
       <p class="text-lg font-extralight">(Sit tight! There are more on the way)</p>
     </div>
   </div>
-</div>
+
 
 <%# CONTACT %>
 <div class="bg-gray-50 py-20 px-16 md:px-40" id="contact-anthony">
