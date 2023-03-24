@@ -17,11 +17,11 @@ export default class extends Controller {
     console.log(window.scrollY)
     const scrollPos = window.scrollY
     if (scrollPos > this.yposValue) {
-      this.element.style.background = 'rgba(249,250,251,1)'
-      this.element.style.borderBottom = '1px solid rgba(229,231,235,1)'
+      // this.element.style.background = 'white'
+      // this.element.style.borderBottom = '1px solid rgba(229,231,235,1)'
     } else {
-      this.element.style.background = 'transparent'
-      this.element.style.borderBottom = 'white'
+      // this.element.style.background = 'transparent'
+      // this.element.style.borderBottom = 'white'
     }
   }
 }
