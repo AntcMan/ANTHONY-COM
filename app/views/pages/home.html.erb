@@ -1,45 +1,52 @@
 <%# BANNER %>
-<div class="row">
-  <div class="banner">
-    <div class="banner-content flex items-center h-screen mt-4 px-16 py-20 text-6xl sm:text-5xl md:text-6xl">
-      <h1 class="leading-24" data-controller="typed" data-typed-strings-value="<%= ["Hey👋 I'm Anthony.
+<section class="flex flex-col justify-center px-4 md:px-8 mx-auto max-w-8xl py-20 min-h-96 md:min-h-screen">
+  <h1 class="text-4xl h-56 md:text-5xl lg:text-6xl max-w-3xl" data-controller="typed" data-typed-strings-value="<%= ["Hey👋 I'm Anthony.
       <br>
       I'm a junior software engineer passionate about creating solutions with code."].to_json %>"></h1>
-    </div>
-  </div>
-</div>
+</section>
 
 <%# ABOUT ME %>
-<div class="py-28 bg-teal-900">
-  <div class="mx-auto md:max-w-2xl px-4 md:px-8 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-16">
-    <img src="<%=asset_path("Anthony_Marion_profile-min.jpg")%>" alt="Profile Image" class="w-32 h-auto col-span-1 mb-8 rounded-sm transform -rotate-3 shadow-lg">
-    <div class="col-span-2">
-      <p class="text-teal-300 text-sm font-mono uppercase tracking-wider mb-2">But first</p>
-      <h3 class="text-4xl mb-4 text-white font-sans">A bit of background</h3>
-      <div class="space-y-4">
-        <p class="lg:my-0 lg:mt-4 text-md font-light text-teal-50/80 leading-relaxed text-justify">I started my career in ecommerce and marketing, helping small business build their online presence and grow their customer base. Throughout my roles, I worked closely with software developers. I saw the power of technology in driving the bottom-line and increasing conversions and became fascinated by the world of coding.</p>
-        <p class="lg:my-0 lg:mt-4 text-md font-light text-teal-50/80 leading-relaxed text-justify">I realised that by coding I could have an even greater impact on the businesses I worked with. So I decided to take the leap and transition my career to become a software engineer. I enrolled in a  coding bootcamp and dedicated every spare moment to learning and practicing my new skills.</p>
-        <p class="lg:my-0 lg:mt-4 text-md font-light text-teal-50/80 leading-relaxed text-justify">And now I look to fuse my e-Commerce expertise with my new coding skills to create solutions that help businesses thrive in the digital world.</p>
+<div class="py-20 bg-teal-900">
+  <%= render 'shared/container' do %>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-16">
+      <img src="<%=asset_path("Anthony_Marion_profile-min.jpg")%>" alt="Profile Image" class="w-32 h-auto col-span-1 mb-8 rounded-sm transform -rotate-3 shadow-lg">
+      <div class="col-span-2">
+        <p class="text-teal-300 text-sm font-mono uppercase tracking-wider mb-2">But first</p>
+        <h3 class="text-4xl mb-4 text-white font-sans">A bit of background</h3>
+        <div class="space-y-4">
+          <p class="lg:my-0 lg:mt-4 text-md font-light text-teal-50/80 leading-relaxed text-justify">I started my career in ecommerce and marketing, helping small business build their online presence and grow their customer base. Throughout my roles, I worked closely with software developers. I saw the power of technology in driving the bottom-line and increasing conversions and became fascinated by the world of coding.</p>
+          <p class="lg:my-0 lg:mt-4 text-md font-light text-teal-50/80 leading-relaxed text-justify">I realised that by coding I could have an even greater impact on the businesses I worked with. So I decided to take the leap and transition my career to become a software engineer. I enrolled in a  coding bootcamp and dedicated every spare moment to learning and practicing my new skills.</p>
+          <p class="lg:my-0 lg:mt-4 text-md font-light text-teal-50/80 leading-relaxed text-justify">And now I look to fuse my e-Commerce expertise with my new coding skills to create solutions that help businesses thrive in the digital world.</p>
+        </div>
       </div>
     </div>
-  </div>
+  <% end %>
 </div>
 
 
 <%# EXPERIENCE %>
-<div class="row">
-  <div class="about-me py-20 px-16 md:px-40">
-    <div class="about-me-content">
-      <h3 class="text-4xl font-bold">Experience and education</h3>
-      <p>insert work experience</p>
+<section class="py-20">
+  <%= render 'shared/container' do %>
+    <h3 class="text-4xl mb-4 text-black font-sans">Experience and education</h3>
+    <p class="lg:my-0 lg:mt-4 text-md text-gray-500 leading-relaxed text-justify">I have spent a number of years in the front-line trenches of digital marketing and e-Commerce. It's here I built my skills and earned myself some pieces of 'paper' along the way.</p>
+
+    <div class="content-experience p-4 border-solid border-2 rounded-sm border-teal-900 my-8">
+      <p class="text-teal-300 text-md font-mono uppercase tracking-wider p-2 mb-2 bg-teal-900 text-center">Work</p>
+      <p>lorem ipsum mply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
     </div>
-  </div>
-</div>
+
+    <div class="content-experience p-4 border-solid border-2 rounded-sm border-teal-900">
+      <p class="text-teal-300 text-md font-mono uppercase tracking-wider p-2 mb-2 bg-teal-900 text-center">School</p>
+      <p>lorem ipsum mply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </div>
+  <% end %>
+</section>
 
 <%# TECH STACK %>
-<div class="tech py-20 px-16 md:px-40" id="tech">
+<section class="py-20" id="tech">
+  <%= render 'shared/container' do %>
   <div class="tech-content">
-    <h1 class="text-4xl font-bold mb-4">What's in my toolbox</h1>
+    <h1 class="text-4xl mb-4 text-black font-sans">In my wheelhouse</h1>
   </div>
   <div class="flex flex-wrap items-center justify-center">
     <div class="flex justify-between w-full sm:w-auto">
@@ -51,30 +58,34 @@
       <img src="<%=asset_path("icons8-html-5.svg")%>" alt="HTML5-logo" class="object-cover pt-4 px-6">
       <img src="<%=asset_path("icons8-javascript.svg")%>" alt="JS-logo" class="object-cover pt-4 px-6">
       <img src="<%=asset_path("icons8-react-native.svg")%>" alt="React-logo" class="object-cover pt-4 px-6">
-
     </div>
   </div>
-</div>
+
+  <% end %>
+</section>
 
 <%# PORTFOLIO %>
-
-  <div class="portfolio h-80 px-16 md:px-40" id="portfolio">
+<section class="py-14" id="portfolio">
+  <%= render 'shared/container' do %>
     <div class="portfolio-content">
-      <h3 class="text-4xl font-bold mb-4">A couple of projects I've been working on</h3>
-      <p class="text-lg font-extralight">(Sit tight! There are more on the way)</p>
+      <h3 class="text-4xl mb-4 text-black font-sans">A couple of projects I've been working on</h3>
+      <p class="text-md text-gray-500 leading-relaxed text-justify">(Sit tight! There are more on the way)</p>
     </div>
-  </div>
+  <% end %>
+</section>
 
 
 <%# CONTACT %>
-<div class="bg-gray-50 py-20 px-16 md:px-40" id="contact-anthony">
-  <div class="contact-content">
-    <h3 class="text-4xl font-bold">One last thing...</h3>
-    <p class="pt-4 text-lg font-extralight">If you'd like to chat about opportunities, projects or just want to say hello - I'm always down to talk.</p>
-    <br>
-    <br>
-    <h3><a href="mailto:anthonycmarion@gmail.com" target="_blank" class="text-teal-700 font-bold hover:text-gray-700 text-lg">
-      Drop me a line here
-    </a></h3>
-  </div>
-</div>
+<section class="py-20" id="contact-anthony">
+  <%= render 'shared/container' do %>
+    <div class="contact-content">
+      <h3 class="text-4xl mb-4 text-black font-sans">One last thing...</h3>
+      <p class="text-md text-gray-500 leading-relaxed text-justify">If you'd like to chat about opportunities, projects or just want to say hello - I'm always down to talk.</p>
+      <br>
+      <br>
+      <h3><a href="mailto:anthonycmarion@gmail.com" target="_blank" class="text-teal-700 font-bold hover:text-gray-700 text-lg">
+        Shoot me a message
+      </a></h3>
+    </div>
+  <% end %>
+</section>
