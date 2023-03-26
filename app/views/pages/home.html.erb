@@ -23,21 +23,46 @@
   <% end %>
 </div>
 
-
 <%# EXPERIENCE %>
-<section class="py-20">
+<section class="pt-20 pb-10">
   <%= render 'shared/container' do %>
     <h3 class="text-4xl mb-4 text-black font-sans">Experience and education</h3>
-    <p class="lg:my-0 lg:mt-4 text-md text-gray-500 leading-relaxed text-justify">I have spent a number of years in the front-line trenches of digital marketing and e-Commerce. It's here I built my skills and earned myself some pieces of 'paper' along the way.</p>
-
-    <div class="content-experience p-4 border-solid border-2 rounded-sm border-teal-900 my-8">
-      <p class="text-teal-300 text-md font-mono uppercase tracking-wider p-2 mb-2 bg-teal-900 text-center">Work</p>
-      <p>lorem ipsum mply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    <p class="lg:my-0 lg:mt-4 text-md text-gray-500 leading-relaxed text-justify font-light">I have spent a number of years in the front-line trenches of digital marketing and e-Commerce. It's here I built my skills and earned myself some pieces of 'paper' along the way.</p>
+    <div class="content-experience p-4 border-solid border rounded-sm border-teal-900 my-8">
+      <p class="text-teal-300 text-md font-mono uppercase tracking-wider p-2 mb-2 bg-teal-900 text-center rounded-sm">Work</p>
+      <p class="text-gray-500 font-light">2020 - 2022</p>
+      <p class="text-md text-black leading-relaxed text-justify font-bold">e-Commerce Manager</p>
+      <p class="text-md text-gray-500 leading-relaxed text-justify font-light">UGT International</p>
+      <br>
+      <p class="text-gray-500 font-light">2019 - 2020</p>
+      <p class="text-md text-black leading-relaxed text-justify font-bold">e-Commerce Assistant</p>
+      <p class="text-md text-gray-500 leading-relaxed text-justify font-light">UGT International</p>
+      <br>
+      <p class="text-gray-500 font-light">2015 - 2019</p>
+      <p class="text-md text-black leading-relaxed text-justify font-bold">Digital Marketing & e-Commerce Assistant</p>
+      <p class="text-md text-gray-500 leading-relaxed text-justify font-light">SimCorner</p>
+      <br>
+      <p class="text-gray-500">2011 - 2014</p>
+      <p class="text-md text-black leading-relaxed text-justify font-bold">Founder</p>
+      <p class="text-md text-gray-500 leading-relaxed text-justify font-light">Mister Brady & Co.</p>
     </div>
+    <div class="content-experience p-4 border-solid border rounded-sm border-teal-900">
+      <p class="text-teal-300 text-md font-mono uppercase tracking-wider p-2 mb-2 bg-teal-900 text-center rounded-sm">School</p>
+      <p class="text-gray-500">2023</p>
+      <p class="text-md text-black leading-relaxed text-justify font-bold">Web Development Bootcamp</p>
+      <p class="text-md text-gray-500 leading-relaxed text-justify">Le Wagon Melbourne</p>
+      <br>
 
-    <div class="content-experience p-4 border-solid border-2 rounded-sm border-teal-900">
-      <p class="text-teal-300 text-md font-mono uppercase tracking-wider p-2 mb-2 bg-teal-900 text-center">School</p>
-      <p>lorem ipsum mply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      <p class="text-gray-500">2012</p>
+      <p class="text-md text-black leading-relaxed text-justify font-bold">Graduate Dipolma of Maketing</p>
+      <p class="text-md text-gray-500 leading-relaxed text-justify">Swinburne University of Technology</p>
+      <br>
+
+      <p class="text-gray-500">2011</p>
+      <p class="text-md text-black leading-relaxed text-justify font-bold">Bachelor Of Business(Finance)</p>
+      <p class="text-md text-gray-500 leading-relaxed text-justify">Swinburne University of Technology</p>
+      <br>
+
     </div>
   <% end %>
 </section>
@@ -65,25 +90,54 @@
 </section>
 
 <%# PORTFOLIO %>
-<section class="py-14" id="portfolio">
-  <%= render 'shared/container' do %>
-    <div class="portfolio-content">
-      <h3 class="text-4xl mb-4 text-black font-sans">A couple of projects I've been working on</h3>
-      <p class="text-md text-gray-500 leading-relaxed text-justify">(Sit tight! There are more on the way)</p>
+<section class="mx-auto max-w-5xl px-4 md:px-8py-20 min-h-96 md:min-h-screen py-10" id="portfolio">
+  <h3 class="text-4xl mb-4 text-black font-sans mb-8">Projects I've been working on</h3>
+  <div class="content">
+
+    <%# ON-BOARD %>
+    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div class="content">
+        <p class="text-teal-300 text-sm font-mono uppercase tracking-wider mb-2">Fullstack Web App</p>
+        <p class="text-md leading-relaxed text-black text-justify text-xl font-bold capitalize mb-2">on board</p>
+        <p class="text-gray-500 text-sm leading-relaxed text-justify font-light mb-4">Ruby On Rails - JavaScript - Tailwind - Heroku</p>
+        <p class="text-md text-gray-500 leading-relaxed text-justify font-light">A new web application designed to make the most of your boating experience in New Caledonia! Boat owners can now rent out their boats to tourists who are keen to take part in a range of exciting activities, including surfing, fishing, snorkeling, and more. With the ability to book directly through the app, tourists can easily find the perfect boat to suit their needs, and take to the crystal-clear waters of New Caledonia's pristine lagoon.
+        </p>
+        <p class="mt-4 text-md text-gray-500 leading-relaxed text-justify font-light">Optimised for desktop.</p>
+        <a class="clickable-icon fa-brands fa-github mt-2" href="https://github.com/JohanBinst/on-board" target="_blank"></a>
+      </div>
+
+      <div class="image">
+        <%= link_to image_tag(asset_path("On_board_hero.png"), class:"object-cover", alt: "On Board"), "https://feeling-blue.herokuapp.com/", target: "_blank" %>
+      </div>
     </div>
-  <% end %>
+    <hr class="mt-8">
+    <%# ANTHONY PROFILE %>
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div class="content">
+        <p class="text-teal-300 text-sm font-mono uppercase tracking-wider mb-2">Design & Development</p>
+        <p class="text-md leading-relaxed text-black text-justify text-xl font-bold mb-2">My Portfolio</p>
+        <p class="text-gray-500 text-sm leading-relaxed text-justify font-light mb-4">Ruby On Rails - JavaScript - Tailwind - SCSS</p>
+        <p class="text-md text-gray-500 leading-relaxed text-justify font-light">My portfolio website showcases my coding projects and demonstrates my skills and experience as a developer. It's built using Ruby on Rails, Tailwind CSS and JavaScript.</p>
+        </p>
+        <a class="clickable-icon fa-brands fa-github mt-2" href="https://github.com/AntcMan/ANTHONY-COM" target="_blank"></a>
+      </div>
+
+      <div class="image">
+        <%= link_to image_tag(asset_path("Anthony_profile_website.png"), class:"object-cover", alt: "Anthony Marion Profile"), "https://github.com/AntcMan/ANTHONY-COM", target: "_blank" %>
+      </div>
+    </div>
+  </div>
 </section>
 
-
 <%# CONTACT %>
-<section class="py-20" id="contact-anthony">
+<section class="bg-teal-900" id="contact-anthony">
   <%= render 'shared/container' do %>
-    <div class="contact-content">
-      <h3 class="text-4xl mb-4 text-black font-sans">One last thing...</h3>
-      <p class="text-md text-gray-500 leading-relaxed text-justify">If you'd like to chat about opportunities, projects or just want to say hello - I'm always down to talk.</p>
+    <div class="contact-content pt-20 pb-20">
+      <h3 class="text-4xl mb-4 text-white font-sans">One last thing...</h3>
+      <p class="lg:my-0 lg:mt-4 text-md font-light text-teal-50/80 leading-relaxed text-justify">If you'd like to chat about opportunities, projects or just want to say hello - I'm always down to talk.</p>
       <br>
       <br>
-      <h3><a href="mailto:anthonycmarion@gmail.com" target="_blank" class="text-teal-700 font-bold hover:text-gray-700 text-lg">
+      <h3><a href="mailto:anthonycmarion@gmail.com" target="_blank" class="bg-gray-900 text-white hover:text-white hover:bg-black py-2 px-5 rounded-sm'">
         Shoot me a message
       </a></h3>
     </div>
