@@ -29,7 +29,7 @@
     <h3 class="text-4xl mb-4 text-black font-sans">Experience and education</h3>
     <p class="lg:my-0 lg:mt-4 text-md text-gray-500 leading-relaxed text-justify">I have spent a number of years in the front-line trenches of digital marketing and e-Commerce. It's here I built my skills and earned myself some pieces of 'paper' along the way.</p>
     
-    <h3 class="text-xl tracking-tight font-medium mt-8 text-black">Work</h3>
+    <h3 class="text-xl tracking-tight font-medium mt-12 text-black">Work</h3>
     <div class="mt-4 flow-root">
       <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
@@ -112,7 +112,7 @@
       </div>
     </div>
 
-    <h3 class="text-xl tracking-tight font-medium mt-8 text-black">Work</h3>
+    <h3 class="text-xl tracking-tight font-medium mt-12 text-black">Work</h3>
     <div class="mt-4 flow-root">
       <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
@@ -264,24 +264,65 @@
 
 <%# TECH STACK %>
 <section class="py-20" id="tech">
-  <%= render 'shared/container' do %>
-  <div class="tech-content">
-    <h1 class="text-4xl mb-4 text-black font-sans">In my wheelhouse</h1>
-  </div>
-  <div class="flex flex-wrap items-center justify-center">
-    <div class="flex justify-between w-full sm:w-auto">
-      <img src="<%=asset_path("icons8-ruby-programming-language.svg")%>" alt="AWS-logo" class="object-cover pt-4 px-6">
-      <img src="<%=asset_path("icons8-amazon-web-services.svg")%>" alt="AWS-logo" class="object-cover pt-4 px-6">
-      <img src="<%=asset_path("icons8-css3.svg")%>" alt="CSS-logo" class="object-cover pt-4 px-6">
+  <div class="mx-auto md:max-w-5xl">
+    <div class="bg-slate-900 md:rounded-sm px-4 md:px-8 py-10">
+      <h3 class="text-sm tracking-tight font-base mb-8 text-slate-500 text-center">Technologies I use</h3>
+      <div class="text-teal-300 grid grid-cols-3 md:grid-cols-6 gap-8 max-w-2xl mx-auto">
+        <% 6.times do %>
+          <div class="flex items-center justify-center flex-col space-y-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-14 h-14">
+              <path d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z" />
+            </svg>
+            <span class="text-slate-500 text-sm">Technology</span>
+          </div>
+        <% end %>
+        <% if false %>
+          <div class="flex justify-between w-full sm:w-auto text-slate-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M152,136a24,24,0,1,1-24-24A24,24,0,0,1,152,136Zm80-8A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-80-24v0a40,40,0,1,0,0,64v0a8,8,0,0,0,16,0V104A40,40,0,0,0,94.13,82.71a8,8,0,0,0,13.54,8.52A24,24,0,0,1,152,104Zm44.81,65.61a8,8,0,0,0-11.2,1.58,72,72,0,0,1-115.22,0,8,8,0,1,0-12.78,9.62,88,88,0,0,0,140.78,0A8,8,0,0,0,196.81,169.61Z"></path></svg>
+            <img src="<%=asset_path("icons8-ruby-programming-language.svg")%>" alt="AWS-logo" class="object-cover pt-4 px-6">
+            <img src="<%=asset_path("icons8-amazon-web-services.svg")%>" alt="AWS-logo" class="object-cover pt-4 px-6">
+            <img src="<%=asset_path("icons8-css3.svg")%>" alt="CSS-logo" class="object-cover pt-4 px-6">
+          </div>
+          <div class="flex justify-between w-full sm:w-auto">
+            <img src="<%=asset_path("icons8-html-5.svg")%>" alt="HTML5-logo" class="object-cover pt-4 px-6">
+            <img src="<%=asset_path("icons8-javascript.svg")%>" alt="JS-logo" class="object-cover pt-4 px-6">
+            <img src="<%=asset_path("icons8-react-native.svg")%>" alt="React-logo" class="object-cover pt-4 px-6">
+          </div>
+        <% end %>
+      </div>
     </div>
-    <div class="flex justify-between w-full sm:w-auto">
-      <img src="<%=asset_path("icons8-html-5.svg")%>" alt="HTML5-logo" class="object-cover pt-4 px-6">
-      <img src="<%=asset_path("icons8-javascript.svg")%>" alt="JS-logo" class="object-cover pt-4 px-6">
-      <img src="<%=asset_path("icons8-react-native.svg")%>" alt="React-logo" class="object-cover pt-4 px-6">
-    </div>
   </div>
+</section>
 
-  <% end %>
+<section class="py-20" id="tech">
+  <div class="mx-auto md:max-w-5xl">
+    <div class="bg-slate-900 md:rounded-sm px-4 md:px-8 py-10">
+      <h3 class="text-sm tracking-tight font-base mb-8 text-slate-500 text-center">Technologies I use</h3>
+      <div class="text-white grid grid-cols-3 md:grid-cols-6 gap-8 max-w-2xl mx-auto">
+        <% 6.times do %>
+          <div class="flex items-center justify-center flex-col space-y-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-14 h-14">
+              <path d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z" />
+            </svg>
+            <span class="text-slate-500 text-sm">Heroku</span>
+          </div>
+        <% end %>
+        <% if false %>
+          <div class="flex justify-between w-full sm:w-auto text-slate-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M152,136a24,24,0,1,1-24-24A24,24,0,0,1,152,136Zm80-8A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-80-24v0a40,40,0,1,0,0,64v0a8,8,0,0,0,16,0V104A40,40,0,0,0,94.13,82.71a8,8,0,0,0,13.54,8.52A24,24,0,0,1,152,104Zm44.81,65.61a8,8,0,0,0-11.2,1.58,72,72,0,0,1-115.22,0,8,8,0,1,0-12.78,9.62,88,88,0,0,0,140.78,0A8,8,0,0,0,196.81,169.61Z"></path></svg>
+            <img src="<%=asset_path("icons8-ruby-programming-language.svg")%>" alt="AWS-logo" class="object-cover pt-4 px-6">
+            <img src="<%=asset_path("icons8-amazon-web-services.svg")%>" alt="AWS-logo" class="object-cover pt-4 px-6">
+            <img src="<%=asset_path("icons8-css3.svg")%>" alt="CSS-logo" class="object-cover pt-4 px-6">
+          </div>
+          <div class="flex justify-between w-full sm:w-auto">
+            <img src="<%=asset_path("icons8-html-5.svg")%>" alt="HTML5-logo" class="object-cover pt-4 px-6">
+            <img src="<%=asset_path("icons8-javascript.svg")%>" alt="JS-logo" class="object-cover pt-4 px-6">
+            <img src="<%=asset_path("icons8-react-native.svg")%>" alt="React-logo" class="object-cover pt-4 px-6">
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </section>
 
 <%# PORTFOLIO %>
