@@ -1,12 +1,18 @@
 <%# BANNER %>
-<section class="flex flex-col justify-center px-4 md:px-8 mx-auto max-w-8xl py-20 min-h-96 md:min-h-screen">
-  <h1 class="text-4xl h-56 md:text-5xl lg:text-6xl max-w-3xl" data-controller="typed" data-typed-strings-value="<%= ["Hey👋 I'm Anthony.
+<section class="flex flex-col justify-center px-4 md:px-8 mx-auto max-w-8xl py-20 min-h-full md:min-h-screen">
+  <h1 class="text-4xl h-56 md:text-5xl mt-10 lg:text-6xl max-w-3xl" data-controller="typed" data-typed-strings-value="<%= ["Hey👋 I'm Anthony.
       <br>
       I'm a junior software engineer passionate about creating solutions with code."].to_json %>"></h1>
+      <div class="relative flex justify-center items-center md:absolute md:bottom-0 md:mb-16 md:left-0 md:right-0">
+        <%= link_to "#about-me" do %>
+          <i class="icon-caret-right"></i>
+          <img src="<%=asset_path("down-icon.svg")%>" class="animate-pulse h-8 w-auto md:mt-0">
+        <% end %>
+      </div>
 </section>
 
 <%# ABOUT ME %>
-<div class="py-20 bg-teal-900">
+<div class="py-20 bg-teal-900" id="about-me">
   <%= render 'shared/container' do %>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-16">
       <img src="<%=asset_path("Anthony_Marion_profile-min.jpg")%>" alt="Profile Image" class="w-32 h-auto col-span-1 mb-8 rounded-sm transform -rotate-3 shadow-lg">
