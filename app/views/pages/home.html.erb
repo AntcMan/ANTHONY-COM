@@ -33,7 +33,7 @@
 <section class="pt-20">
   <%= render 'shared/container' do %>
     <h3 class="text-4xl mb-4 text-black font-sans">Experience and education</h3>
-    <p class="lg:my-0 lg:mt-4 text-md text-gray-500 leading-relaxed text-justify">I have spent a number of years in the front-line trenches of digital marketing and e-Commerce. It's here I built my skills and earned myself some pieces of 'paper' along the way.</p>
+    <p class="lg:my-0 lg:mt-4 text-md text-gray-500 font-light leading-relaxed text-justify">I have spent a number of years in the front-line trenches of digital marketing and e-Commerce. It's here I built my skills and earned myself some pieces of 'paper' along the way.</p>
 
     <div class="my-8">
       <p class="text-xl tracking-tight font-medium mb-2 text-black">Work</p>
@@ -125,7 +125,7 @@
 </section>
 
 <%# PORTFOLIO %>
-<section class="mx-auto max-w-5xl px-4 md:px-8py-20 min-h-96 md:min-h-screen py-10" id="portfolio">
+<section class="mx-auto max-w-5xl px-4 md:px-8 py-20 min-h-96 md:min-h-screen py-10" id="portfolio">
   <h3 class="text-4xl mb-4 text-black font-sans mb-8">Projects I've been working on</h3>
   <div class="content">
 
@@ -165,32 +165,20 @@
 </section>
 
 <%# CONTACT %>
-<section class="bg-teal-900" id="contact-anthony">
+<section class="bg-teal-900 py-20" id="contact-anthony">
   <%= render 'shared/container' do %>
-    <div class="contact-content mt-20 pt-20 pb-20">
-      <h3 class="text-4xl mb-4 text-white font-sans">One last thing...</h3>
-      <p class="lg:my-0 lg:mt-4 text-md font-light text-teal-50/80 leading-relaxed text-justify">If you'd like to chat about opportunities, projects or just want to say hello - I'm always down to talk.</p>
+  <p class="text-teal-300 text-sm font-mono uppercase tracking-wider mb-2">Want to chat?</p>
+  <h1 class="text-4xl mb-4 text-white font-sans">Drop me a line</h1>
+  <p class="lg:my-0 lg:mt-4 text-md font-light text-teal-50/80 leading-relaxed text-justify pb-5">Feel free to write me a message below and I will get back to you.</p>
+
+    <%= form_for :contact, url: contact_index_path do |f| %>
+      <%= f.text_field :name, placeholder: "NAME", class: "mb-5 mr-5 bg-transparent placeholder-teal-50/80 text-teal-50/80 font-light font-mono w-full", id:"name-field" %>
+      <%= f.text_field :email, placeholder: "WORK EMAIL", class: "mb-5 bg-transparent placeholder-teal-50/80 text-teal-50/80 font-light font-mono w-full" %><br>
+      <div class="flex md:mt-4">
+        <%= f.text_area :message, placeholder: "MESSAGE", class: "mb-5 bg-transparent placeholder-teal-50/80 text-teal-50/80 font-light font-mono w-full md:flex-1" %>
+      </div>
       <br>
-      <br>
-      <h3><a href="mailto:anthonycmarion@gmail.com" target="_blank" class="bg-gray-900 text-white hover:text-white hover:bg-black py-2 px-5 rounded-sm'">
-        Shoot me a message
-      </a></h3>
-    </div>
+      <%= f.button 'SEND', type: 'submit', class: 'bg-gray-900 px-5 text-white font-light font-mono uppercase hover:text-white hover:bg-black py-2 px-5 rounded-sm' %>
+    <% end %>
   <% end %>
-</section>
-
-<section class="bg-teal-900" id="contact-anthony">
-  <h1>Contact us</h1>
-<p>Send us an email and we will be in touch shortly</p>
-
-<%= form_for :contact, url: contact_index_path do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %><br/>
-  <%= f.label :email %>
-  <%= f.text_field :email %><br/>
-  <%= f.label :message %>
-  <%= f.text_area :message %>
-  <%= f.submit %>
-<% end %>
-
 </section>
