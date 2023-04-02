@@ -1,11 +1,12 @@
 class ContactController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
-
     if @contact.deliver
-      redirect_to root_path, notice: "Thanks for contacting us!"
+      flash[:notice] = 'Message sent!'
+      redirect_to root_path
     else
-      redirect_to root_path, alert: "There was an error sending your message."
+      flash.now.alert = "Try again. Error sending message."
+      render 'pages/home'
     end
   end
 
