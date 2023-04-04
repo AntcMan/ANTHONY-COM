@@ -178,7 +178,7 @@
         <%= f.text_area :message, placeholder: "MESSAGE", class: "mb-5 bg-transparent placeholder-teal-50/80 text-teal-50/80 font-light font-mono w-full md:flex-1" %>
       </div>
       <br>
-      <%= f.button 'SEND', type: 'submit', class: 'bg-gray-900 px-5 text-white font-light font-mono uppercase hover:text-white hover:bg-black py-2 px-5 rounded-sm' %>
+      <%= f.button 'SEND', type: 'submit', class: 'bg-gray-900 px-5 text-white font-light font-mono uppercase hover:text-white hover:bg-black py-2 px-5 rounded-sm', data: {turbo: false} %>
     <% end %>
   <% end %>
 </section>

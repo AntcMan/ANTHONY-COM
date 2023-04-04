@@ -2,11 +2,10 @@ class ContactController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.deliver
-      flash[:notice] = 'Message sent!'
-      redirect_to root_path
+      redirect_to '/', notice: 'Message sent. Thank you!'
     else
       flash.now.alert = "Try again. Error sending message."
-      render 'pages/home'
+      render 'pages/home', status: :unprocessable_entity
     end
   end
 
