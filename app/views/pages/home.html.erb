@@ -116,7 +116,7 @@
         </div>
 
         <div>
-          <img "JS" src="<%=asset_path("javascript_1.svg")%>" alt="JS-logo" class="object-cover pt-4 px-4 transform hover:scale-75 transition duration-600">
+          <img src="<%=asset_path("javascript_1.svg")%>" alt="JS-logo" class="object-cover pt-4 px-4 transform hover:scale-75 transition duration-600">
           <p class="text-sm tracking-tight font-base pt-4 text-slate-500 text-center">Javascript</p>
         </div>
       </div>
@@ -153,7 +153,6 @@
         <p class="text-md leading-relaxed text-black text-justify text-xl font-bold mb-2">My portfolio</p>
         <p class="text-gray-500 text-sm leading-relaxed text-justify font-light mb-4">Ruby On Rails - JavaScript - Tailwind - SCSS</p>
         <p class="text-md text-gray-500 leading-relaxed text-justify font-light">My portfolio website showcases my coding projects and demonstrates my skills and experience as a developer. It's built using Ruby on Rails, Tailwind CSS and JavaScript.</p>
-        </p>
         <a class="clickable-icon fa-brands fa-github mt-2" href="https://github.com/AntcMan/ANTHONY-COM" target="_blank"></a>
       </div>
 
@@ -178,7 +177,7 @@
         <%= f.text_area :message, placeholder: "MESSAGE", class: "mb-5 bg-transparent placeholder-teal-50/80 text-teal-50/80 font-light font-mono w-full md:flex-1" %>
       </div>
       <br>
-      <%= f.button 'SEND', type: 'submit', class: 'bg-gray-900 px-5 text-white font-light font-mono uppercase hover:text-white hover:bg-black py-2 px-5 rounded-sm', data: {turbo: false} %>
+      <%= f.button 'SEND', type: 'submit', class: 'bg-gray-900 px-5 text-white font-light font-mono uppercase hover:text-white hover:bg-black py-2 px-5 rounded-sm' %>
     <% end %>
   <% end %>
 </section>
