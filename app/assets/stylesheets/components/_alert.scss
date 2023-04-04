@@ -1,8 +1,15 @@
 .alert {
   position: fixed;
-  bottom: 16px;
-  right: 16px;
-  z-index: 1000;
-  font-size: large;
-  color: red;
+    bottom: 16px;
+    right: 16px;
+    z-index: 1000;
+    font-size: small;
+    background-color: #134e4a;
+    border-radius: 4px;
+    border: 1px solid rgb(20,184, 166);
+    color: white;
+    padding: 10px;
+    font-weight: 200;
+    font-family: 'IBM Plex Mono';
+    text-transform: uppercase;
 }
